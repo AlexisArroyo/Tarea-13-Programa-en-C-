@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int opcion,a,b;
+	float res;
+	char temp[10];
+	do	{
+		printf("--MENU--");
+    printf("1.SUMA\n");
+		printf("2.RESTA\n");
+		printf("3.SALIR\n");
+		fgets(temp,10,stdin);
+		opcion=atoi(temp);
+		switch(opcion)	{
+			case 1:
+				printf("Ingrese 1er numero\n"); cin>>a;
+				printf("Ingrese 2do numero\n"); cin>>b;
+				res=a+b; break;
+				
+			case 2:
+				printf("Ingrese 1er numero\n"); cin>>a;
+				printf("Ingrese 2do numero\n"); cin>>b;
+				res=a-b; break;
+				
+			case 3:exit(0);
+			
+			default: printf("Opcion no valida");
+		
+}
+	
